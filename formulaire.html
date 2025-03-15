@@ -1,0 +1,62 @@
+<!DOCTYPE hmtl>
+<html lang="fr">  
+<head>
+  <title>Formulaire d'enquête</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" /> 
+</head>
+<body>
+  <h1 id="title" >FORMULAIRE D'ENQUÊTE</h1>
+<p id="description" >Le formulaire d’enquête est un outil méthodologique d’observation qui comprend un ensemble de questions s’enchaînant de manière structurée et logique.</p>
+<form id="survey-form" >
+  <label id="name-label" for="name"> 
+    NOM <input name="Name" id="name" type="text" placeholder="saisir un nom" required/>
+  </label>
+  <label id="email-label" for="email">
+    Email <input name="Email" id="email" type="email" placeholder="entrer votre email" required />
+  </label>
+  <label id="number-label" for="number">
+    Âge <input name="Age" id="number" type="number" min="12" max="90" placeholder="âge" required />
+  </label>
+  <p id="statut">Quelle est votre statut actuel?</p>
+  <label for="dropdown" > 
+    <select name="drop" id="dropdown"reguired >
+     <option value="" >please faites votre choix
+     </option>
+     <option value="1">Fonctionnaire</option>
+     <option value="2">Entrepreneur</option>
+     <option value="3">Etudiant</option>
+     <option value="4">Employé</option>
+    </select>
+  </label>
+  <p id="time">Quelle est votre créneau horaire?</p>
+  <label>
+    <input id="time1" name="bottom" type="radio" value="Lundi - Mercredi" checked >Lundi - Mercredi (08h - 14h)</label>
+  <label>
+   <input id="time2" name="bottom" type="radio" value="Mardi - Jeudi"> Mardi - Jeudi (08h - 14h)</label>
+  <label>
+    <input id="time3" name="bottom" type="radio" value="Vendredi - Samedi" > Vendredi - Samedi (08h - 12h)</label>
+  </label>
+  <p id="choice">Choisissez les cours que vous aimeriez apprendre:</p>
+  <label>
+    <input value="fullstack" id="course_fullstack" name="course" type="checkbox" checked> Cours de web developper fullstack
+  </label>
+  <label>
+    <input value="devops" id="course_devops" name="course" type="checkbox"> Cours de devops
+  </label>
+  <label>
+    <input value="python" id="course_python" name="course" type="checkbox"> Cours de Python et framework
+  </label>
+  <label>
+    <input value="big-data" id="course_bigdata" name="course" type="checkbox"> Cours de big data
+  </label>
+  <label>
+    <input value="mysqyl" id="course_mysql" name="course" type="checkbox"> Cours de base de donnée avec Mysql
+  </label>
+  <p>Veuillez donnés vos suggestions</p>
+  <textarea id="comment" name="comment" placeholder="Entrer vos commentaires ici..."></textarea>
+  <button id="submit" name="submit" type="submit">Soumettre</button>
+</form>
+</body>
+</html>
