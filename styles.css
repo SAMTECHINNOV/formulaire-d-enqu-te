@@ -8,6 +8,10 @@ h1{
     text-align: center;
 }
 
+#description {
+    text-align: center;
+}
+
 #survey-form {
     max-width: 600px;
     margin: auto;
